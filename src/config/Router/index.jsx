@@ -1,16 +1,16 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, Login, Register } from "../../pages";
+import { Home, Login, Register, CreateBlog, DetailBlog } from "../../pages";
+import { Navbar } from "../../components";
 
 const Router = () => {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="login" element={<Login />} />
-                <Route path="register" element={<Register />} />
-            </Routes>
-        </BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="create-blog" element={<CreateBlog />} />
+            <Route path="login" element={<Login />} />
+            <Route path="register" element={<Register />} />
+        </Routes>
     );
 };
 

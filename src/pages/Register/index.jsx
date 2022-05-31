@@ -10,16 +10,16 @@ const Register = () => {
         <div className="flex font-Poppins h-[100vh] max-w-[100vw] container">
             <div className="w-full hidden lg:flex items-center bg-gray-100 h-full">
                 <img
-                    className=" h-[600px] w-full"
+                    className=" h-[500px] w-full"
                     src={RegisterBg}
                     alt="register-bg"
                 />
             </div>
-            <div className="w-full lg:w-[700px] flex flex-col items-center justify-start bg-primary h-full mx-auto">
+            <div className="w-full lg:w-[700px] flex flex-col items-center justify-center bg-primary h-full mx-auto">
                 <h1 className="text-4xl text-gray-100 p-10 text-center font-bold">
                     Register
                 </h1>
-                <form className="lg:w-2/3 h-fit rounded px-5 flex flex-col gap-5 py-7 bg-gray-100">
+                <form className="lg:w-2/3 h-fit mb-24 rounded px-5 flex flex-col gap-5 py-7 bg-gray-100">
                     <Input
                         label="Full Name"
                         placeholder="Your Full Name"
